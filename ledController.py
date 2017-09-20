@@ -5,6 +5,7 @@ import time
 import serial
 
 ser = serial.Serial('/dev/ttyS0')
+ser.setDTR(False)
 
 
 def turn_on():
